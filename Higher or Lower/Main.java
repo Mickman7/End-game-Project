@@ -37,6 +37,7 @@ public class Main
           else {
             System.out.println("You lost!");
             isOver = true;
+            System.out.println("Your final score is: " + score);  
           }
 
         }
@@ -50,6 +51,7 @@ public class Main
           else{
             System.out.println("You lost!!");
             isOver = true;
+            System.out.println("Your final score is: " + score);  
           }
           
         }  
