@@ -29,10 +29,9 @@ public class Main
         if(answer.equalsIgnoreCase("H")){
           valid = true;
           if(Hand.getNumber() < flippedCard.getNumber()){
-            System.out.println("You had the card " + Hand);
             System.out.println("You won");
+            System.out.println("You had the card " + Hand);
             score++;
-            System.out.println(score);
           }
           else {
             System.out.println("You lost!");
@@ -61,7 +60,7 @@ public class Main
       PlayingDeck.addCard(Hand);
       Hand = flippedCard;
       PlayingDeck.shuffleDeck();
-      HorL.close();
+      //HorL.close();
     }   
   
  }
