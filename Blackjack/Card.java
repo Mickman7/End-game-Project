@@ -1,4 +1,4 @@
-public class Card
+ public class Card
 {
     private Suits suit;
     private Rank value;
