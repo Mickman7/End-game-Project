@@ -11,17 +11,16 @@ public class Deck
     //creating all cards in deck
     public void createCards(){
         for (Suits s : Suits.values()) {
+            int number = 0;
             for (Rank r : Rank.values()) {
-                //Card c = new Card(s,r);
-                this.deck.add(new Card(s,r));
+                if (number < 10){
+                    number++;
+                }
+                this.deck.add(new Card(s,r,number));
             }  
         }
     }
 
-    public void shuffleDeck(){
-        Collections.shuffle(deck);
-        //System.out.println(this.deck);
-    }
 
     public String toString(){
         String printCards = "";
